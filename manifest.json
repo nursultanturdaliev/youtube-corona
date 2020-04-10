@@ -1,0 +1,32 @@
+{
+    "name": "No Corona",
+    "version": "1.0",
+    "description": "Disable All Corona Related Videos",
+    "permissions": [
+      "storage", 
+      "https://*.youtube.com/", 
+      "declarativeContent", 
+      "activeTab", 
+      "webRequestBlocking"
+    ],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      },
+      "page_action": {
+        "default_popup": "popup.html"
+      },
+      "content_scripts": [
+        {
+          "run_at":"document_end",
+          "matches": ["https://www.youtube.com/*"],
+          "css": [
+          ],
+          "js": [
+            "contentScript.js"            
+          ]
+        }
+      ],
+      "web_accessible_resources":["html/*"],
+    "manifest_version": 2
+  }
