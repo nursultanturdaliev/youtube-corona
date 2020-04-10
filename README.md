@@ -8,3 +8,15 @@ Do you also want to have this kind of protection? Yes? Then let's create a great
 This extension is kind of `Adblocker` but for specific topics on specific platforms.
 
 
+How To Install?
+
+1. Download this repository
+2. Go to chrome://extensions
+3. Enable Developer Mode using switch on the right
+4. Click Load unpacked and choose downloaded folder
+5. Go to Youtube.com
+5. Now you should not see any Corona related videos
+6. Search for `Corona` or `covid-19`
+7. You should get empty response.
+
+
